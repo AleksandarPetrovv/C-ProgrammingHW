@@ -1,0 +1,9 @@
+Turning "3_transformation.c" into an object file "3_transformation.o":
+
+gcc -c 3_transformation.c -o 3_transformation.o
+
+
+
+Compiling and linking of "3_main.c" with "3_transformation.o":
+
+gcc 3_main.c 3_transformation.o -o 3_main.exe

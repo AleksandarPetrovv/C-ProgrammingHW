@@ -1,0 +1,11 @@
+qs: 1-main.o 1-quadraticroots.o
+	gcc 1-main.o 1-quadraticroots.o -o qs -lm
+
+1-main.o: 1-main.c 1-quadraticroots.h
+	gcc -c 1-main.c
+
+quadraticroots.o: 1-quadraticroots.c 1-quadraticroots.h
+	gcc -c 1-quadraticroots.c
+
+clean:
+	rm -f *.o qs

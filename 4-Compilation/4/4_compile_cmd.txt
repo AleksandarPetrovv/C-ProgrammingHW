@@ -1,0 +1,3 @@
+Link "4_main.c" with the standard libraries for use of function pow and make executable "4_main.exe":
+
+gcc 4_main.c -lm -o 4_main.exe

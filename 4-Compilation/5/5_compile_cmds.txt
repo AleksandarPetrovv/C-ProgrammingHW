@@ -1,0 +1,15 @@
+Turning "5_maths.c" into an object file:
+
+gcc -c 5_maths.c -o 5_maths.o
+
+
+
+Creating a static library from maths.o:
+
+ar rcs 5_libmaths.a 5_maths.o
+
+
+
+Compiling "main.c" and linking with the static library of "maths.o":
+
+gcc "5_main.c" -L. -lmaths -o 5_main
